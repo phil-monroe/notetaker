@@ -1,4 +1,4 @@
-<h1>Editing note</h1>
+<h1><%= best_in_place @note, :name%></h1>
 
 <% @note.subnotes.each do |subnote| %>
 	<%= best_in_place subnote, :content %><br>
