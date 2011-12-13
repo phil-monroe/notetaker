@@ -1,14 +1,20 @@
 <h1><%= best_in_place @note, :name%></h1>
 
-<% @note.subnotes.each do |subnote| %>
-	<%= best_in_place subnote, :content %><br>
+<div id="subnotes">
+	<% @note.subnotes.each do |subnote| %>
+	<div class="subnote">
+		<%= best_in_place subnote, :content, type: :textarea %>
+	</div>
+	<a href="#"><hr></a>
+	
+	<% end %>	
+</div>
 
-<% end %>
 
 <%= form_for @note.subnotes.build do |form| %>
 	<%= form.text_area :content %><br>
 	<%= form.hidden_field :note_id %><br>
-	<%= form.submit "Add Subnote"%>
+	<%= form.submit "Add Subnote", class: "button" %>
 <% end %>
 
 <%= link_to 'Show', @note %> |

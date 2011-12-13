@@ -1,3 +1,18 @@
 // Place all the styles related to the subnotes_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.subnote{
+	font-size: 20pt;
+	width: 100%;
+	margin: 0 0 .5em 0;
+	padding: 10.5px 21px;
+}
+
+.subnote:hover{
+	background: #fafafa;
+}
+
+.subnote textarea{
+	margin: -10.5px -21px;
+}
