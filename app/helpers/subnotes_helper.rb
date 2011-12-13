@@ -1,0 +1,2 @@
+module SubnotesHelper
+end
