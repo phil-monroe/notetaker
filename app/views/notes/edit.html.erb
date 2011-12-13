@@ -1,12 +1,10 @@
-<h1><%= best_in_place @note, :name%></h1>
+<h1 class="title"><%= best_in_place @note, :name%></h1>
 
 <div id="subnotes">
 	<% @note.subnotes.each do |subnote| %>
-	<div class="subnote">
+	<div class="subnote markdown">
 		<%= best_in_place subnote, :content, type: :textarea, display_as: :md_content %>
-	</div>
-	<a href="#"><hr></a>
-	
+	</div>	
 	<% end %>	
 </div>
 

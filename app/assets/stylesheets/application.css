@@ -14,9 +14,9 @@
 	width: 1000px;
 }
 
-h1{
+h1.title{
 	font-size: 60pt;
-	text-align: center;
 	padding: .5em 0 .5em 0;
+	text-align: center;
 }
 
