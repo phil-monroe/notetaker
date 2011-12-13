@@ -35,7 +35,6 @@ class NotesController < ApplicationController
   # GET /notes/1/edit
   def edit
     @note = Note.find(params[:id])
-    @subnote = @note.subnotes.build
   end
 
   # POST /notes

@@ -1,11 +1,11 @@
 <h1>Editing note</h1>
 
 <% @note.subnotes.each do |subnote| %>
-	<%= subnote.content %><br>
+	<%= best_in_place subnote, :content %><br>
 
 <% end %>
 
-<%= form_for @subnote do |form| %>
+<%= form_for @note.subnotes.build do |form| %>
 	<%= form.text_area :content %><br>
 	<%= form.hidden_field :note_id %><br>
 	<%= form.submit "Add Subnote"%>
