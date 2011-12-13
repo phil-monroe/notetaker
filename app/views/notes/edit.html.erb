@@ -3,7 +3,7 @@
 <div id="subnotes">
 	<% @note.subnotes.each do |subnote| %>
 	<div class="subnote">
-		<%= best_in_place subnote, :content, type: :textarea %>
+		<%= best_in_place subnote, :content, type: :textarea, display_as: :md_content %>
 	</div>
 	<a href="#"><hr></a>
 	

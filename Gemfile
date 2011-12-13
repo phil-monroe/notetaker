@@ -7,6 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 gem 'best_in_place'
+gem 'redcarpet', "~> 2.0.0b"
 
 
 # Gems used only for assets and not required
