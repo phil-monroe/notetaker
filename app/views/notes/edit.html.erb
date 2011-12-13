@@ -12,6 +12,7 @@
 <%= form_for @note.subnotes.build do |form| %>
 	<%= form.text_area :content %><br>
 	<%= form.hidden_field :note_id %><br>
+	<%= form.hidden_field :position, value: @note.subnotes.count + 1 %><br>
 	<%= form.submit "Add Subnote", class: "button" %>
 <% end %>
 
